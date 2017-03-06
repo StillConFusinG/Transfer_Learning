@@ -37,7 +37,7 @@ size(cnnFeat_train)
 size(trainingLabels)
 
 
-test_size=12250; index_test = index(12751:25000);
+test_size=numel(index)-tr_size; index_test = index(tr_size+1:numel(index));
 testingImages = zeros([imageSize test_size],'single');
 testingLabels = zeros(test_size,1);
 for jj1 = 1:test_size
