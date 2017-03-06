@@ -12,11 +12,10 @@ load('cnnModel.mat');
 cnnModel.info.opts.batchSize = 200;
  
 imset = dir('../train/*.jpg'); names = {imset.name};
-index = randperm(25000); save('index.mat','index');
-load('index.mat'); tr_size = 5000; 
+index = randperm(numel(names));tr_size = 5000; 
 index_train = index(1:tr_size); 
 
-imageSize = cnnModel.net.normalization.imageSize;
+imageSize = cnnModel.net.normalization.imageSize(1:3);
  
 trainingImages = zeros([imageSize tr_size],'single');
 trainingLabels = zeros(tr_size,1);
