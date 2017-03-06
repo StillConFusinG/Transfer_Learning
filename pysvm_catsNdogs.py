@@ -22,14 +22,13 @@ def load_data(path):
     tst_lb = [int(x) for x in f]
 
     print('Summary:')
-    print('\t # classes = ' + str(max(tst_lb)))
-    print('\t Feature dimension = ' + str(len(tr_feat[0])))
-    print('\t # train/test samples = ' + str(len(tr_feat)) + '/' +str(len(tst_feat)))
+    print('\t # classes             = ' + str(max(tst_lb)))
+    print('\t # Feature             = ' + str(len(tr_feat[0])))
+    print('\t # train/test samples  = ' + str(len(tr_feat)) + '/' +str(len(tst_feat)))
 
     return tr_feat,tr_lb,tst_feat,tst_lb
 
 def main():
-    #path = os.environ['HOME']+'/Acads/AML'
     path = os.getcwd()
     [tr_feat,tr_lb,tst_feat,tst_lb ] = load_data(path)
     
