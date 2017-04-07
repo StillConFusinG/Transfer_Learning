@@ -29,7 +29,7 @@ def load_data(path):
     return tr_feat,tr_lb,tst_feat,tst_lb
 
 def main():
-    path = os.getcwd()
+    path = os.getcwd()+'/data/'
     [tr_feat,tr_lb,tst_feat,tst_lb ] = load_data(path)
     
     C_range = np.logspace(1,4,4)
