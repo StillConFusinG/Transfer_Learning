@@ -9,7 +9,9 @@ The idea is to take advantage of deep architectures out there to accomplish qual
 
 The SVM implementation is borrowed from [sklearn](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html). This is binary SVM with [RBF kernel](https://en.wikipedia.org/wiki/Radial_basis_function_kernel) and is very fast in nature as it is linear with minimum coding required and the same code generalizes to multi-class scenario. More details about using RBF kernel in SVM can be found [here](http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html).
 
-Run the above code using these steps. `data_kaggle_catsNdogs.tar.bz2` contains features extracted using VGG-CNN in matlab. Code for that also given. The python SVM implemented here also contains [hyper-parameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization) which deals with model selection and reducing over-fitting of training data.
+Run the below code using these steps. The python SVM implemented here also contains [hyper-parameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization) which deals with model selection and reducing over-fitting of training data.
+
+Download [VGG-CNN from here](http://www.vlfeat.org/matconvnet/pretrained/). In order to extract features in batches, you will need `cnnPredict.m`. This is available [here](https://github.com/parallel-forall/code-samples/blob/master/MATLAB_deeplearning/cnnPredict.m). Use `extract_feat_all.m` to extarct features use pysvm script to train your SVM classifier for any dataset. Sample extracted features are included in `data_kaggle_catsNdogs.tar.bz2`.
 
 ```
 ~: $ git clone https://github.com/vishalkg/Transfer_Learning.git
