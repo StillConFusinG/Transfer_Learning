@@ -22,3 +22,4 @@ Download [VGG-CNN from here](http://www.vlfeat.org/matconvnet/pretrained/). In o
 A total of 5000 samples were used for tarining and 12250 for testing the performance of classifier. Accuracy obtained after hp-optimization: ~71%. You can use the matlab script to extract features for more samples if you wish to and add it to existing training set to improve further.
 
 Reference: https://devblogs.nvidia.com/parallelforall/deep-learning-for-computer-vision-with-matlab-and-cudnn/
+NOTE: The feature extraction part is specific to VGG-CNN. If you have a different Deep Architecture, try to figure out the features from network just before logistic layer. Classifier part is generic.
