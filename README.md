@@ -11,7 +11,7 @@ The SVM implementation is borrowed from [sklearn](http://scikit-learn.org/stable
 
 Run the below code using these steps. The python SVM implemented here also contains [hyper-parameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization) which deals with model selection and reducing over-fitting of training data.
 
-Download [VGG-CNN from here](http://www.vlfeat.org/matconvnet/pretrained/). In order to extract features in batches, you will need `cnnPredict.m`. This is available [here](https://github.com/parallel-forall/code-samples/blob/master/MATLAB_deeplearning/cnnPredict.m). Use `extract_feat_all.m` to extarct features use pysvm script to train your SVM classifier for any dataset. Sample extracted features are included in `data_kaggle_catsNdogs.tar.bz2`.
+Download [VGG-CNN from here](http://www.vlfeat.org/matconvnet/pretrained/). In order to extract features in batches, you will need `cnnPredict.m`. This is available [here](https://github.com/parallel-forall/code-samples/blob/master/MATLAB_deeplearning/cnnPredict.m). Use `extract_feat_all.m` to extarct features. Use pysvm script to train your SVM classifier for any dataset. Sample extracted features are included in `data_kaggle_catsNdogs.tar.bz2`.
 
 ```
 ~: $ git clone https://github.com/vishalkg/Transfer_Learning.git
