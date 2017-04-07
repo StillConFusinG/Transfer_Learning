@@ -9,7 +9,7 @@ The idea is to take advantage of deep architectures out there to accomplish qual
 
 The SVM implementation is borrowed from [sklearn](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html). This is binary SVM and is very fast in nature as it is linear with minimum coding required and the same code generalizes to multi-class scenario. 
 
-Run the above code using these steps. `data_kaggle_catsNdogs.tar.bz2` contains features extracted usoing VGG-CNN in matlab. Code for that also given. The python SVM implemented here also contains [hyper-parameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization) which delas with model selection and reducing over-fitting of training data.
+Run the above code using these steps. `data_kaggle_catsNdogs.tar.bz2` contains features extracted using VGG-CNN in matlab. Code for that also given. The python SVM implemented here also contains [hyper-parameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization) which deals with model selection and reducing over-fitting of training data.
 ```
 ~: $ git clone https://github.com/vishalkg/Transfer_Learning.git
 ~: $ tar xvjf data_kaggle_catsNdogs.tar.bz2
